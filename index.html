@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,6 @@
             --linux: #ed8936;
             --progress: #4299e1;
         }
-        
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 1.125rem;
@@ -24,24 +24,20 @@
             background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
             overflow-x: hidden;
         }
-        
         h1, h2, h3 {
             font-family: 'Poppins', sans-serif;
             color: #0f172a;
             font-weight: 700;
         }
-        
         .header-bg {
             background: linear-gradient(120deg, #1e3a8a 0%, #3b82f6 100%);
             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
-        
         .section-heading {
             position: relative;
             display: inline-block;
             padding-bottom: 0.75rem;
         }
-        
         .section-heading::after {
             content: '';
             position: absolute;
@@ -52,7 +48,6 @@
             background: #3b82f6;
             border-radius: 4px;
         }
-        
         .category-heading {
             position: relative;
             display: flex;
@@ -60,7 +55,6 @@
             gap: 10px;
             padding-left: 1.5rem;
         }
-        
         .category-heading::before {
             content: '';
             position: absolute;
@@ -69,12 +63,10 @@
             height: 12px;
             border-radius: 50%;
         }
-        
         .cyber::before { background: var(--cyber); }
         .ai::before { background: var(--ai); }
         .fullstack::before { background: var(--fullstack); }
         .linux::before { background: var(--linux); }
-        
         .task-card {
             display: flex;
             gap: 1rem;
@@ -86,7 +78,6 @@
             position: relative;
             overflow: hidden;
         }
-        
         .task-card::before {
             content: '';
             position: absolute;
@@ -96,21 +87,17 @@
             height: 100%;
             transition: width 0.3s ease;
         }
-        
         .task-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
         }
-        
         .task-card:hover::before {
             width: 8px;
         }
-        
         .cyber-card::before { background: var(--cyber); }
         .ai-card::before { background: var(--ai); }
         .fullstack-card::before { background: var(--fullstack); }
         .linux-card::before { background: var(--linux); }
-        
         .custom-checkbox {
             appearance: none;
             flex-shrink: 0;
@@ -123,7 +110,6 @@
             position: relative;
             top: 0.2rem;
         }
-        
         .custom-checkbox:checked {
             background-color: #3b82f6;
             border-color: #2563eb;
@@ -132,12 +118,10 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-        
         .custom-checkbox:focus {
             outline: none;
             box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
         }
-        
         .link-item {
             font-weight: 600;
             color: #2563eb;
@@ -146,20 +130,17 @@
             border-radius: 6px;
             display: inline-block;
         }
-        
         .link-item:hover {
             color: #ffffff;
             background-color: #2563eb;
             transform: translateX(5px);
         }
-        
         .use-case {
             font-size: 1rem;
             color: #4b5563;
             margin-top: 0.5rem;
             line-height: 1.6;
         }
-        
         .library-tag, .difficulty-tag {
             display: inline-block;
             padding: 0.3rem 0.8rem;
@@ -168,22 +149,18 @@
             font-weight: 600;
             margin: 0.3rem 0.5rem 0.3rem 0;
         }
-        
         .library-tag {
             background-color: #dbeafe;
             color: #1e40af;
         }
-        
         .difficulty-tag {
             background-color: #fee2e2;
             color: #991b1b;
         }
-        
         .container {
             max-width: 1100px;
             padding: 2rem;
         }
-        
         section {
             margin: 3rem 0;
             padding: 2.5rem;
@@ -192,12 +169,10 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
         }
-        
         section:hover {
             transform: translateY(-6px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
         nav {
             background: #1e293b;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -205,7 +180,6 @@
             top: 0;
             z-index: 100;
         }
-        
         nav a {
             padding: 0.8rem 1.5rem;
             font-size: 1.1rem;
@@ -214,7 +188,6 @@
             position: relative;
             overflow: hidden;
         }
-        
         nav a::after {
             content: '';
             position: absolute;
@@ -225,139 +198,172 @@
             background: #3b82f6;
             transition: width 0.3s ease;
         }
-        
         nav a:hover {
             color: #ffffff;
             background: rgba(59, 130, 246, 0.1);
         }
-        
         nav a:hover::after {
             width: 100%;
         }
-        
         nav a.active {
             background: rgba(59, 130, 246, 0.2);
             color: #93c5fd;
         }
-        
         nav a.active::after {
             width: 100%;
         }
-        
         footer {
-            background: linear-gradient(120deg, #1e3a8a 0%, #0f172a 100%);
-            padding: 2rem 0;
-            font-size: 1rem;
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            padding: 4rem 0 2rem;
+            color: #e2e8f0;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            margin-top: 4rem;
         }
-        
-        .progress-bar {
-            height: 8px;
-            background: #e5e7eb;
-            border-radius: 9999px;
-            overflow: hidden;
-            margin-top: 1rem;
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .footer-column h3 {
+            color: white;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
             position: relative;
+            display: inline-block;
         }
-        
-        .progress-bar-fill {
-            height: 100%;
-            background: var(--progress);
-            transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-            position: relative;
-        }
-        
-        .progress-bar-fill::after {
+        .footer-column h3::after {
             content: '';
             position: absolute;
-            top: 0;
+            bottom: -8px;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            animation: progress-shine 1.5s infinite;
+            width: 40px;
+            height: 3px;
+            background: #3b82f6;
+            border-radius: 3px;
         }
-        
-        @keyframes progress-shine {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
-        
-        .progress-label {
-            position: absolute;
-            top: -30px;
-            right: 0;
-            background: var(--progress);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.85rem;
+        .footer-link {
+            color: #cbd5e0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        
-        .capstone-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #f59e0b, #d97706);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 9999px;
-            font-weight: 600;
-            margin-left: 10px;
-            font-size: 0.9rem;
+        .footer-link:hover {
+            color: #3b82f6;
+            transform: translateX(5px);
         }
-        
-        .library-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1.5rem;
+        .footer-link i {
+            width: 20px;
+            text-align: center;
         }
-        
-        .library-card {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 1.5rem;
+        .footer-bottom {
+            text-align: center;
+            padding-top: 3rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .social-link:hover {
+            background: #3b82f6;
+            transform: translateY(-3px);
+        }
+        .week-section {
+            position: relative;
             border-left: 4px solid #3b82f6;
-            transition: transform 0.3s ease;
+            padding-left: 1.5rem;
+            margin-bottom: 3rem;
         }
-        
-        .library-card:hover {
-            transform: translateY(-5px);
-            background: #f1f5f9;
-        }
-        
-        .phase-icon {
-            width: 50px;
-            height: 50px;
+        .week-number {
+            position: absolute;
+            left: -15px;
+            top: -15px;
+            background: #3b82f6;
+            color: white;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            margin-right: 15px;
-            flex-shrink: 0;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
         }
-        
-        .phase1-icon { background: linear-gradient(135deg, #93c5fd, #3b82f6); }
-        .phase2-icon { background: linear-gradient(135deg, #a5b4fc, #6366f1); }
-        .phase3-icon { background: linear-gradient(135deg, #fbcfe8, #ec4899); }
-        .phase4-icon { background: linear-gradient(135deg, #fdba74, #f97316); }
-        
+        .week-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px dashed #e2e8f0;
+        }
+        .week-progress {
+            margin-top: 1.5rem;
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .week-notes {
+            background: #f8fafc;
+            border-left: 3px solid #3b82f6;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .task-card {
+            position: relative;
+        }
+        .task-priority {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .priority-high { background: #ef4444; }
+        .priority-medium { background: #f59e0b; }
+        .priority-low { background: #10b981; }
+        .task-due-date {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
         @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
-            
-            section {
-                padding: 1.5rem;
-                margin: 2rem 0;
+            .week-section {
+                padding-left: 1rem;
+                margin-left: 0.5rem;
             }
-            
-            nav div {
-                flex-wrap: wrap;
-                gap: 0.5rem;
-            }
-            
-            nav a {
-                padding: 0.6rem 1rem;
-                font-size: 0.9rem;
+            .week-number {
+                left: -12px;
+                width: 25px;
+                height: 25px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -370,7 +376,6 @@
             <p class="text-lg opacity-80">Estimated Time: 12-18 months for pro-level mastery (3-4 hours daily)</p>
         </div>
     </header>
-
     <nav class="text-white py-4 sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto flex flex-wrap justify-center gap-4">
             <a href="#libraries" class="active"><i class="fas fa-toolbox mr-2"></i>Libraries & Tools</a>
@@ -380,7 +385,6 @@
             <a href="#phase4"><i class="fas fa-mountain mr-2"></i>Phase 4 (Shahana)</a>
         </div>
     </nav>
-
     <!-- Libraries & Tools Section -->
     <section id="libraries" class="container mx-auto">
         <div class="flex items-center mb-6">
@@ -392,7 +396,6 @@
                 <p class="text-gray-700">Essential libraries for Cybersecurity, AI/ML, Full-Stack, and Linux CLI projects</p>
             </div>
         </div>
-        
         <div class="library-grid">
             <div class="library-card">
                 <h3 class="text-xl font-semibold text-cyber mb-3 category-heading cyber">AI/ML & Data Science</h3>
@@ -408,7 +411,6 @@
                     <li><span class="font-bold">opencv-python:</span> Computer Vision</li>
                 </ul>
             </div>
-            
             <div class="library-card">
                 <h3 class="text-xl font-semibold text-ai mb-3 category-heading ai">Cybersecurity & Cryptography</h3>
                 <ul class="space-y-2">
@@ -418,7 +420,6 @@
                     <li><span class="font-bold">scapy:</span> Packet manipulation</li>
                 </ul>
             </div>
-            
             <div class="library-card">
                 <h3 class="text-xl font-semibold text-fullstack mb-3 category-heading fullstack">Full-Stack & Web</h3>
                 <ul class="space-y-2">
@@ -428,7 +429,6 @@
                     <li><span class="font-bold">networkx:</span> Graph algorithms</li>
                 </ul>
             </div>
-            
             <div class="library-card">
                 <h3 class="text-xl font-semibold text-linux mb-3 category-heading linux">Linux CLI & System Tools</h3>
                 <ul class="space-y-2">
@@ -442,7 +442,6 @@
             </div>
         </div>
     </section>
-
     <!-- Phase 1 -->
     <section id="phase1" class="container mx-auto">
         <div class="flex items-center mb-6">
@@ -456,13 +455,11 @@
                 </p>
             </div>
         </div>
-        
         <div class="progress-bar">
             <div class="progress-bar-fill" style="width: 25%">
                 <div class="progress-label">25%</div>
             </div>
         </div>
-        
         <h3 class="text-2xl font-semibold category-heading cyber mt-8 mb-5"><i class="fas fa-shield-alt mr-2"></i>Cybersecurity</h3>
         <ul class="space-y-4">
             <li class="task-card cyber-card">
@@ -495,7 +492,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading ai mt-8 mb-5"><i class="fas fa-robot mr-2"></i>AI / Machine Learning</h3>
         <ul class="space-y-4">
             <li class="task-card ai-card">
@@ -521,7 +517,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading fullstack mt-8 mb-5"><i class="fas fa-layer-group mr-2"></i>Full-Stack</h3>
         <ul class="space-y-4">
             <li class="task-card fullstack-card">
@@ -543,7 +538,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading linux mt-8 mb-5"><i class="fas fa-terminal mr-2"></i>Linux CLI</h3>
         <ul class="space-y-4">
             <li class="task-card linux-card">
@@ -566,7 +560,6 @@
             </li>
         </ul>
     </section>
-
     <!-- Phase 2 -->
     <section id="phase2" class="container mx-auto">
         <div class="flex items-center mb-6">
@@ -580,13 +573,11 @@
                 </p>
             </div>
         </div>
-        
         <div class="progress-bar">
             <div class="progress-bar-fill" style="width: 50%">
                 <div class="progress-label">50%</div>
             </div>
         </div>
-        
         <h3 class="text-2xl font-semibold category-heading cyber mt-8 mb-5"><i class="fas fa-shield-alt mr-2"></i>Cybersecurity</h3>
         <ul class="space-y-4">
             <li class="task-card cyber-card">
@@ -619,7 +610,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading ai mt-8 mb-5"><i class="fas fa-robot mr-2"></i>AI / Machine Learning</h3>
         <ul class="space-y-4">
             <li class="task-card ai-card">
@@ -655,7 +645,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading fullstack mt-8 mb-5"><i class="fas fa-layer-group mr-2"></i>Full-Stack</h3>
         <ul class="space-y-4">
             <li class="task-card fullstack-card">
@@ -678,7 +667,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading linux mt-8 mb-5"><i class="fas fa-terminal mr-2"></i>Linux CLI</h3>
         <ul class="space-y-4">
             <li class="task-card linux-card">
@@ -701,7 +689,6 @@
                 </div>
             </li>
         </ul>
-        
         <div class="text-center mt-12 py-8">
             <h3 class="text-2xl font-bold mb-4">Continue Your Learning Journey</h3>
             <p class="text-gray-700 mb-6">The next phases contain more advanced algorithms and techniques</p>
@@ -710,7 +697,6 @@
             </a>
         </div>
     </section>
-
     <!-- Phase 3 -->
     <section id="phase3" class="container mx-auto">
         <div class="flex items-center mb-6">
@@ -724,13 +710,11 @@
                 </p>
             </div>
         </div>
-        
         <div class="progress-bar">
             <div class="progress-bar-fill" style="width: 75%">
                 <div class="progress-label">75%</div>
             </div>
         </div>
-        
         <h3 class="text-2xl font-semibold category-heading cyber mt-8 mb-5"><i class="fas fa-shield-alt mr-2"></i>Cybersecurity</h3>
         <ul class="space-y-4">
             <li class="task-card cyber-card">
@@ -755,7 +739,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading ai mt-8 mb-5"><i class="fas fa-robot mr-2"></i>AI / Machine Learning</h3>
         <ul class="space-y-4">
             <li class="task-card ai-card">
@@ -782,7 +765,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading fullstack mt-8 mb-5"><i class="fas fa-layer-group mr-2"></i>Full-Stack</h3>
         <ul class="space-y-4">
             <li class="task-card fullstack-card">
@@ -805,7 +787,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading linux mt-8 mb-5"><i class="fas fa-terminal mr-2"></i>Linux CLI</h3>
         <ul class="space-y-4">
             <li class="task-card linux-card">
@@ -827,7 +808,6 @@
                 </div>
             </li>
         </ul>
-        
         <div class="text-center mt-12 py-8">
             <h3 class="text-2xl font-bold mb-4">Ready for the Final Challenge?</h3>
             <p class="text-gray-700 mb-6">Phase 4 brings elite-level projects and mastery</p>
@@ -836,7 +816,6 @@
             </a>
         </div>
     </section>
-
     <!-- Phase 4 -->
     <section id="phase4" class="container mx-auto">
         <div class="flex items-center mb-6">
@@ -850,13 +829,11 @@
                 </p>
             </div>
         </div>
-        
         <div class="progress-bar">
             <div class="progress-bar-fill" style="width: 100%">
                 <div class="progress-label">100%</div>
             </div>
         </div>
-        
         <h3 class="text-2xl font-semibold category-heading cyber mt-8 mb-5"><i class="fas fa-shield-alt mr-2"></i>Cybersecurity</h3>
         <ul class="space-y-4">
             <li class="task-card cyber-card">
@@ -881,7 +858,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading ai mt-8 mb-5"><i class="fas fa-robot mr-2"></i>AI / Machine Learning</h3>
         <ul class="space-y-4">
             <li class="task-card ai-card">
@@ -907,7 +883,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading fullstack mt-8 mb-5"><i class="fas fa-layer-group mr-2"></i>Full-Stack</h3>
         <ul class="space-y-4">
             <li class="task-card fullstack-card">
@@ -930,7 +905,6 @@
                 </div>
             </li>
         </ul>
-
         <h3 class="text-2xl font-semibold category-heading linux mt-8 mb-5"><i class="fas fa-terminal mr-2"></i>Linux CLI</h3>
         <ul class="space-y-4">
             <li class="task-card linux-card">
@@ -953,53 +927,72 @@
             </li>
         </ul>
     </section>
-
-    <footer class="text-white text-center py-8">
-        <div class="container mx-auto">
-            <p class="text-lg mb-2">Built with ❤️ for  MJ's Deep Seekh Journey</p>
-            <p class="text-yellow-400 font-bold">#KeepHacking #KeepBuilding</p>
-            <div class="mt-6 flex justify-center space-x-6">
-                <a href="https://github.com/JawadAbbasi14" class="text-white hover:text-blue-300"><i class="fab fa-github fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/jawad-abbasi-978a39369/" class="text-white hover:text-blue-300"><i class="fab fa-linkedin fa-lg"></i></a>
-                <a href="" class="text-white hover:text-blue-300"><i class="fab fa-twitter fa-lg"></i></a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Learning Path</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Cyber Security</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> AI & Machine Learning</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Full Stack Development</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Linux Administration</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Documentation</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Tutorial Videos</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Cheat Sheets</a>
+                    <a href="#" class="footer-link"><i class="fas fa-chevron-right"></i> Community Forum</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <div class="footer-links">
+                    <a href="mailto:jawadabbasi14@example.com" class="footer-link"><i class="fas fa-envelope"></i> jawadabbasi14@example.com</a>
+                    <a href="tel:+1234567890" class="footer-link"><i class="fas fa-phone"></i> +1 (234) 567-890</a>
+                    <a href="#" class="footer-link"><i class="fas fa-map-marker-alt"></i> New York, USA</a>
+                </div>
+                <div class="social-links mt-4">
+                    <a href="https://github.com/JawadAbbasi14" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jawad-abbasi-978a39369/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MJ's Deep Seekh Journey. All rights reserved.</p>
+            <p>Built with ❤️ for continuous learning and growth</p>
+        </div>
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('nav a');
-
             // Handle click events for navigation links
             navLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault(); // Prevent default anchor behavior
                     const targetId = this.getAttribute('href').substring(1);
                     const targetSection = document.getElementById(targetId);
-                    
                     // Smooth scroll to target section
                     targetSection.scrollIntoView({ behavior: 'smooth' });
-                    
                     // Update active class
                     navLinks.forEach(l => l.classList.remove('active'));
                     this.classList.add('active');
                 });
             });
-
             // Update navigation active state on scroll
             window.addEventListener('scroll', function() {
                 let current = '';
-                
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                    
                     if (window.pageYOffset >= sectionTop - 200 && window.pageYOffset < sectionTop + sectionHeight - 200) {
                         current = section.getAttribute('id');
                     }
                 });
-                
                 navLinks.forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('href').substring(1) === current) {
@@ -1007,7 +1000,6 @@
                     }
                 });
             });
-
             // Persist checkbox states
             const checkboxes = document.querySelectorAll('.custom-checkbox');
             checkboxes.forEach(checkbox => {
@@ -1019,7 +1011,6 @@
                     localStorage.setItem(checkbox.id, checkbox.checked);
                 });
             });
-
             // Animate progress bars on scroll
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -1029,7 +1020,6 @@
                     }
                 });
             }, { threshold: 0.1 });
-            
             sections.forEach(section => {
                 observer.observe(section);
             });
@@ -1037,3 +1027,4 @@
     </script>
 </body>
 </html>
+```
