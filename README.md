@@ -2,6 +2,8 @@
 
 A master-level, handcrafted roadmap designed for those who aim to dominate the worlds of **Cybersecurity**, **AI/ML**, **Full-Stack Web Development**, and **Linux CLI** — using pure code, deep logic, and modern tools.
 
+🌐 **Live Roadmap View**: [View the HTML Roadmap](https://jawadabbasi14.github.io/the-ultimate-algorithm-blueprint/)
+
 ---
 
 ## 🎯 Vision
@@ -30,7 +32,6 @@ Each phase combines **LeetCode problems**, **CLI tasks**, and **real projects**.
 ---
 
 ## 📁 Folder Structure (Coming Soon)
-
 
 ---
 
@@ -68,7 +69,8 @@ Each phase combines **LeetCode problems**, **CLI tasks**, and **real projects**.
 
 ## 🏁 How to Use
 
-1. Open the HTML file in your browser.
+1. Open the HTML file in your browser  
+   👉 or view live: **[Roadmap Live Preview](https://jawadabbasi14.github.io/the-ultimate-algorithm-blueprint/)**
 2. Click the phase you want to focus on.
 3. Solve linked problems and complete checkboxes.
 4. Work on the suggested project at the end of each phase.
@@ -100,7 +102,7 @@ Each phase combines **LeetCode problems**, **CLI tasks**, and **real projects**.
 
 ## 🚀 Contribute
 
-Found a new algorithm or tool that fits the vision?
+Found a new algorithm or tool that fits the vision?  
 Open a PR or Issue. Let’s make this roadmap even stronger!
 
 ---
@@ -126,4 +128,3 @@ Built and curated by someone **on a mission** to master the top tech domains —
 
 > Contact: [Coming Soon]  
 > Follow-up Projects: Full-stack store, AI assistants, custom Linux shells — all coming under this roadmap.
-
