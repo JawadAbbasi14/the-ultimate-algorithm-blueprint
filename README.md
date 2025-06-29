@@ -1,3 +1,36 @@
+# 🚀 The Ultimate Algorithm Blueprint
+
+A master-level, handcrafted roadmap designed for those who aim to dominate the worlds of **Cybersecurity**, **AI/ML**, **Full-Stack Web Development**, and **Linux CLI** — using pure code, deep logic, and modern tools.
+
+---
+
+## 🎯 Vision
+
+> This is not just a roadmap — it is a **career weapon**.
+>
+> Built for those who dream big and work hard.
+
+This repository is your **power guide** to learning and mastering the most **practical, in-demand algorithms** and real-world coding tools used by top engineers, security experts, and data scientists around the world.
+
+---
+
+## 🧠 What You’ll Learn
+
+This blueprint covers **four mission-critical domains**:
+
+| Domain         | Focus Areas                                                                 |
+|----------------|------------------------------------------------------------------------------|
+| 🔐 Cybersecurity | Cryptography (AES, RSA, HMAC), TLS, X.509, Secure APIs                     |
+| 🤖 AI/ML        | Regression, Trees, SVM, Clustering, Deep Learning, Transformers            |
+| 🌐 Full-Stack   | Data Structures, Sorting, Search, Flask/Django, APIs, Project Architectures |
+| 🧠 Linux CLI    | Bash, Networking, File Permissions, Arch Setup, Automation, System Tools   |
+
+Each phase combines **LeetCode problems**, **CLI tasks**, and **real projects**.
+
+---
+
+## 📁 Folder Structure (Coming Soon)
+
 
 ---
 
