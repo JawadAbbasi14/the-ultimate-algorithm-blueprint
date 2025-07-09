@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorithm Roadmap: Cybersecurity, AI/ML, Full-Stack & Linux CLI</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
     <style>
         /* --- New Modern CSS Styling --- */
         :root {
@@ -17,20 +17,18 @@
             --text-secondary: #9ca3af; /* Medium Gray */
             --accent-primary: #3b82f6; /* Blue */
             --accent-secondary: #10b981; /* Green */
-
             /* Category Colors */
             --cyber: #f472b6; /* Pink */
             --ai: #8b5cf6; /* Violet */
             --fullstack: #22d3ee; /* Cyan */
             --linux: #f59e0b; /* Amber */
+            --completed-border: #10b981; /* Green for completed tasks */
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 1.1rem;
@@ -39,19 +37,16 @@
             background-color: var(--bg-primary);
             overflow-x: hidden;
         }
-
         h1, h2, h3 {
             font-family: 'Poppins', sans-serif;
             color: #ffffff;
             font-weight: 700;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         /* --- Header Styling --- */
         .header-bg {
             background: linear-gradient(135deg, rgba(31, 41, 55, 0.8), rgba(17, 24, 39, 0.9)), url('https://placehold.co/1920x1080/111827/1f2937?text=.') no-repeat center center/cover;
@@ -68,7 +63,6 @@
             font-size: 1.25rem;
             color: var(--text-secondary);
         }
-
         /* --- Navigation Bar --- */
         nav {
             background: rgba(31, 41, 55, 0.8);
@@ -102,7 +96,6 @@
         nav a i {
             margin-right: 0.5rem;
         }
-
         /* --- Section Styling --- */
         section {
             margin: 4rem 0;
@@ -134,7 +127,6 @@
             background: var(--accent-primary);
             border-radius: 4px;
         }
-
         /* --- Category & Task Card Styling --- */
         .category-heading {
             font-size: 1.75rem;
@@ -150,7 +142,6 @@
         .ai { color: var(--ai); }
         .fullstack { color: var(--fullstack); }
         .linux { color: var(--linux); }
-
         .task-card {
             display: flex;
             gap: 1.5rem;
@@ -168,12 +159,11 @@
             border-color: var(--accent-primary);
             box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         }
-        
         .cyber-card:hover { border-color: var(--cyber); }
         .ai-card:hover { border-color: var(--ai); }
         .fullstack-card:hover { border-color: var(--fullstack); }
         .linux-card:hover { border-color: var(--linux); }
-
+        
         /* --- Custom Checkbox --- */
         .custom-checkbox {
             appearance: none;
@@ -199,7 +189,13 @@
             outline: none;
             box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4);
         }
-
+        
+        /* --- Completed Task Styles --- */
+        .task-card.completed {
+            border-color: var(--completed-border);
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3), 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
         /* --- Tags and Links --- */
         .link-item {
             font-weight: 600;
@@ -233,7 +229,6 @@
             background-color: rgba(244, 114, 182, 0.1);
             color: #f9a8d4;
         }
-
         /* --- Libraries Section Grid --- */
         .library-grid {
             display: grid;
@@ -260,7 +255,6 @@
             color: var(--text-primary);
             font-weight: 500;
         }
-
         /* --- Footer Styling --- */
         footer {
             background: #000000;
@@ -313,12 +307,10 @@
             margin-top: 3rem;
             border-top: 1px solid #374151;
         }
-        
         /* Remove unused classes */
         .week-section, .week-number, .week-header, .week-progress, .week-notes, .task-priority, .task-due-date {
             display: none;
         }
-        
         @media (max-width: 768px) {
             .header-bg h1 { font-size: 2.5rem; }
             section { padding: 2rem 1.5rem; }
@@ -407,7 +399,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="sha256">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/sha-256-hash-in-python/" target="_blank" class="link-item">SHA-256 Hashing</a>
+                        <a href=" https://www.geeksforgeeks.org/sha-256-hash-in-python/ " target="_blank" class="link-item">SHA-256 Hashing</a>
                         <div class="tags">
                             <span class="library-tag">pycryptodome</span>
                             <span class="difficulty-tag">Easy</span>
@@ -418,7 +410,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="aes">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/implementation-of-aes/" target="_blank" class="link-item">AES Encryption</a>
+                        <a href="https://www.geeksforgeeks.org/implementation-of-aes/ " target="_blank" class="link-item">AES Encryption</a>
                         <div class="tags">
                             <span class="library-tag">pycryptodome</span>
                             <span class="library-tag">cryptography</span>
@@ -430,7 +422,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="rsa">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/rsa-algorithm-in-cryptography/" target="_blank" class="link-item">RSA Algorithm</a>
+                        <a href="https://www.geeksforgeeks.org/rsa-algorithm-in-cryptography/ " target="_blank" class="link-item">RSA Algorithm</a>
                         <div class="tags">
                             <span class="library-tag">pycryptodome</span>
                             <span class="library-tag">cryptography</span>
@@ -442,7 +434,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="base64-encoding">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/encode-ascii-string-base64-format/" target="_blank" class="link-item">Base64 Encoding/Decoding</a>
+                        <a href="https://www.geeksforgeeks.org/encode-ascii-string-base64-format/ " target="_blank" class="link-item">Base64 Encoding/Decoding</a>
                         <div class="tags">
                             <span class="library-tag">base64 (Built-in)</span>
                             <span class="difficulty-tag">Easy</span>
@@ -453,7 +445,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="password-hashing">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/how-to-use-bcrypt-to-hash-passwords-in-python/" target="_blank" class="link-item">Password Hashing (bcrypt)</a>
+                        <a href="https://www.geeksforgeeks.org/how-to-use-bcrypt-to-hash-passwords-in-python/ " target="_blank" class="link-item">Password Hashing (bcrypt)</a>
                         <div class="tags">
                             <span class="library-tag">bcrypt</span>
                             <span class="difficulty-tag">Easy</span>
@@ -467,7 +459,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="linear-regression">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/linear-regression-python-implementation/" target="_blank" class="link-item">Linear Regression</a>
+                        <a href="https://www.geeksforgeeks.org/linear-regression-python-implementation/ " target="_blank" class="link-item">Linear Regression</a>
                         <div class="tags">
                             <span class="library-tag">scikit-learn</span>
                             <span class="library-tag">numpy</span>
@@ -480,7 +472,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="logistic-regression">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/understanding-logistic-regression/" target="_blank" class="link-item">Logistic Regression</a>
+                        <a href="https://www.geeksforgeeks.org/understanding-logistic-regression/ " target="_blank" class="link-item">Logistic Regression</a>
                         <div class="tags">
                             <span class="library-tag">scikit-learn</span>
                             <span class="library-tag">numpy</span>
@@ -493,7 +485,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="knn">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/k-nearest-neighbor-algorithm-in-python/" target="_blank" class="link-item">K-Nearest Neighbors</a>
+                        <a href="https://www.geeksforgeeks.org/k-nearest-neighbor-algorithm-in-python/ " target="_blank" class="link-item">K-Nearest Neighbors</a>
                         <div class="tags">
                             <span class="library-tag">scikit-learn</span>
                             <span class="library-tag">numpy</span>
@@ -505,7 +497,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="decision-tree">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/decision-tree-implementation-python/" target="_blank" class="link-item">Decision Tree</a>
+                        <a href="https://www.geeksforgeeks.org/decision-tree-implementation-python/ " target="_blank" class="link-item">Decision Tree</a>
                         <div class="tags">
                             <span class="library-tag">scikit-learn</span>
                             <span class="library-tag">pandas</span>
@@ -520,7 +512,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="binary-search">
                     <div>
-                        <a href="https://leetcode.com/problems/binary-search/" target="_blank" class="link-item">Binary Search</a>
+                        <a href="https://leetcode.com/problems/binary-search/ " target="_blank" class="link-item">Binary Search</a>
                         <div class="tags">
                             <span class="library-tag">Python Built-in</span>
                             <span class="difficulty-tag">Easy</span>
@@ -531,7 +523,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="merge-sort">
                     <div>
-                        <a href="https://leetcode.com/problems/sort-list/" target="_blank" class="link-item">Merge Sort</a>
+                        <a href="https://leetcode.com/problems/sort-list/ " target="_blank" class="link-item">Merge Sort</a>
                         <div class="tags">
                             <span class="library-tag">Python Built-in</span>
                             <span class="difficulty-tag">Medium</span>
@@ -542,7 +534,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="bubble-sort">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/bubble-sort/" target="_blank" class="link-item">Bubble Sort</a>
+                        <a href="https://www.geeksforgeeks.org/bubble-sort/ " target="_blank" class="link-item">Bubble Sort</a>
                         <div class="tags">
                             <span class="library-tag">Python Built-in</span>
                             <span class="difficulty-tag">Easy</span>
@@ -553,7 +545,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="hash-table">
                     <div>
-                        <a href="https://leetcode.com/problems/two-sum/" target="_blank" class="link-item">Hash Table Basics</a>
+                        <a href="https://leetcode.com/problems/two-sum/ " target="_blank" class="link-item">Hash Table Basics</a>
                         <div class="tags">
                             <span class="library-tag">Python Built-in</span>
                             <span class="difficulty-tag">Easy</span>
@@ -564,7 +556,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="dom-manipulation">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/dom-document-object-model-introduction/" target="_blank" class="link-item">DOM Manipulation Basics</a>
+                        <a href="https://www.geeksforgeeks.org/dom-document-object-model-introduction/ " target="_blank" class="link-item">DOM Manipulation Basics</a>
                         <div class="tags">
                             <span class="library-tag">JavaScript</span>
                             <span class="difficulty-tag">Easy</span>
@@ -575,7 +567,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="rest-client">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/python-requests-tutorial/" target="_blank" class="link-item">Basic REST Client (fetch/axios)</a>
+                        <a href="https://www.geeksforgeeks.org/python-requests-tutorial/ " target="_blank" class="link-item">Basic REST Client (fetch/axios)</a>
                         <div class="tags">
                             <span class="library-tag">JavaScript</span>
                             <span class="library-tag">Python (requests)</span>
@@ -590,7 +582,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="bash-basics">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/bash-scripting-basics/" target="_blank" class="link-item">Bash Scripting Basics</a>
+                        <a href="https://www.geeksforgeeks.org/bash-scripting-basics/ " target="_blank" class="link-item">Bash Scripting Basics</a>
                         <div class="tags">
                             <span class="library-tag">bash</span>
                             <span class="difficulty-tag">Easy</span>
@@ -601,7 +593,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="file-permissions">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/permissions-in-linux/" target="_blank" class="link-item">File Permissions & Users</a>
+                        <a href="https://www.geeksforgeeks.org/permissions-in-linux/ " target="_blank" class="link-item">File Permissions & Users</a>
                         <div class="tags">
                             <span class="library-tag">bash</span>
                             <span class="difficulty-tag">Easy</span>
@@ -612,7 +604,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="grep-sed">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/grep-command-in-linux-unix/" target="_blank" class="link-item">Grep and Sed Basics</a>
+                        <a href="https://www.geeksforgeeks.org/grep-command-in-linux-unix/ " target="_blank" class="link-item">Grep and Sed Basics</a>
                         <div class="tags">
                             <span class="library-tag">bash</span>
                             <span class="difficulty-tag">Easy</span>
@@ -623,7 +615,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="cron-jobs">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/" target="_blank" class="link-item">Cron Jobs</a>
+                        <a href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/ " target="_blank" class="link-item">Cron Jobs</a>
                         <div class="tags">
                             <span class="library-tag">bash</span>
                             <span class="difficulty-tag">Easy</span>
@@ -646,7 +638,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="hmac">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/hmac-algorithm-in-python/" target="_blank" class="link-item">HMAC</a>
+                        <a href="https://www.geeksforgeeks.org/hmac-algorithm-in-python/ " target="_blank" class="link-item">HMAC</a>
                         <div class="tags">
                             <span class="library-tag">pycryptodome</span>
                             <span class="library-tag">cryptography</span>
@@ -658,7 +650,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="dsa-ecdsa">
                     <div>
-                        <a href="https://cryptography.io/en/latest/hazmat/primitives/asymmetric/dsa/" target="_blank" class="link-item">DSA / ECDSA</a>
+                        <a href="https://cryptography.io/en/latest/hazmat/primitives/asymmetric/dsa/ " target="_blank" class="link-item">DSA / ECDSA</a>
                         <div class="tags">
                             <span class="library-tag">cryptography</span>
                             <span class="library-tag">pycryptodome</span>
@@ -670,7 +662,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="x509">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/how-to-generate-and-read-x509-certificate-in-python/" target="_blank" class="link-item">X.509 Certificates</a>
+                        <a href="https://www.geeksforgeeks.org/how-to-generate-and-read-x509-certificate-in-python/ " target="_blank" class="link-item">X.509 Certificates</a>
                         <div class="tags">
                             <span class="library-tag">cryptography</span>
                             <span class="difficulty-tag">Medium</span>
@@ -681,7 +673,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="diffie-hellman">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/implementation-diffie-hellman-algorithm/" target="_blank" class="link-item">Diffie-Hellman Key Exchange</a>
+                        <a href="https://www.geeksforgeeks.org/implementation-diffie-hellman-algorithm/ " target="_blank" class="link-item">Diffie-Hellman Key Exchange</a>
                         <div class="tags">
                             <span class="library-tag">pycryptodome</span>
                             <span class="difficulty-tag">Medium</span>
@@ -692,7 +684,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="packet-crafting">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/packet-crafting-using-scapy/" target="_blank" class="link-item">Packet Crafting with Scapy</a>
+                        <a href="https://www.geeksforgeeks.org/packet-crafting-using-scapy/ " target="_blank" class="link-item">Packet Crafting with Scapy</a>
                         <div class="tags">
                             <span class="library-tag">scapy</span>
                             <span class="difficulty-tag">Medium</span>
@@ -706,7 +698,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="svm">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/" target="_blank" class="link-item">Support Vector Machine (SVM)</a>
+                        <a href="https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/ " target="_blank" class="link-item">Support Vector Machine (SVM)</a>
                         <div class="tags">
                             <span class="library-tag">scikit-learn</span>
                             <span class="difficulty-tag">Medium</span>
@@ -717,7 +709,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="random-forest">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/random-forest-regression-in-python/" target="_blank" class="link-item">Random Forest</a>
+                        <a href="https://www.geeksforgeeks.org/random-forest-regression-in-python/ " target="_blank" class="link-item">Random Forest</a>
                         <div class="tags">
                             <span class="library-tag">scikit-learn</span>
                             <span class="difficulty-tag">Medium</span>
@@ -731,7 +723,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="bfs-dfs">
                     <div>
-                        <a href="https://leetcode.com/tag/breadth-first-search/" target="_blank" class="link-item">BFS/DFS</a>
+                        <a href="https://leetcode.com/tag/breadth-first-search/ " target="_blank" class="link-item">BFS/DFS</a>
                         <div class="tags">
                             <span class="library-tag">networkx</span>
                             <span class="difficulty-tag">Medium</span>
@@ -742,7 +734,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="rate-limiting">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/rate-limiting-in-flask/" target="_blank" class="link-item">Rate Limiting</a>
+                        <a href="https://www.geeksforgeeks.org/rate-limiting-in-flask/ " target="_blank" class="link-item">Rate Limiting</a>
                         <div class="tags">
                             <span class="library-tag">Flask-Limiter</span>
                             <span class="difficulty-tag">Medium</span>
@@ -753,7 +745,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="jwt-auth">
                     <div>
-                        <a href="https://pyjwt.readthedocs.io/en/stable/" target="_blank" class="link-item">JWT Authentication</a>
+                        <a href="https://pyjwt.readthedocs.io/en/stable/ " target="_blank" class="link-item">JWT Authentication</a>
                         <div class="tags">
                             <span class="library-tag">PyJWT</span>
                             <span class="library-tag">Flask/Django</span>
@@ -768,7 +760,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="process-management">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/linux-process-management/" target="_blank" class="link-item">Process Management</a>
+                        <a href="https://www.geeksforgeeks.org/linux-process-management/ " target="_blank" class="link-item">Process Management</a>
                         <div class="tags">
                             <span class="library-tag">ps</span>
                             <span class="library-tag">top</span>
@@ -781,7 +773,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="networking-tools">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/netcat-nc-command-with-examples/" target="_blank" class="link-item">Networking Tools</a>
+                        <a href="https://www.geeksforgeeks.org/netcat-nc-command-with-examples/ " target="_blank" class="link-item">Networking Tools</a>
                         <div class="tags">
                             <span class="library-tag">netcat</span>
                             <span class="library-tag">nmap</span>
@@ -806,7 +798,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="steganography">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/image-steganography-using-python/" target="_blank" class="link-item">Steganography</a>
+                        <a href="https://www.geeksforgeeks.org/image-steganography-using-python/ " target="_blank" class="link-item">Steganography</a>
                         <div class="tags">
                             <span class="library-tag">Pillow</span>
                             <span class="difficulty-tag">Hard</span>
@@ -820,7 +812,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="cnn">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/convolutional-neural-network-in-python/" target="_blank" class="link-item">Convolutional Neural Networks (CNN)</a>
+                        <a href="https://www.geeksforgeeks.org/convolutional-neural-network-in-python/ " target="_blank" class="link-item">Convolutional Neural Networks (CNN)</a>
                         <div class="tags">
                             <span class="library-tag">TensorFlow/Keras</span>
                             <span class="difficulty-tag">Hard</span>
@@ -834,7 +826,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="dynamic-programming">
                     <div>
-                        <a href="https://leetcode.com/tag/dynamic-programming/" target="_blank" class="link-item">Dynamic Programming</a>
+                        <a href="https://leetcode.com/tag/dynamic-programming/ " target="_blank" class="link-item">Dynamic Programming</a>
                         <div class="tags">
                             <span class="library-tag">Python Built-in</span>
                             <span class="difficulty-tag">Hard</span>
@@ -848,7 +840,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="firewall-config">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/introduction-to-firewall-and-its-types/" target="_blank" class="link-item">Firewall Configuration</a>
+                        <a href="https://www.geeksforgeeks.org/introduction-to-firewall-and-its-types/ " target="_blank" class="link-item">Firewall Configuration</a>
                         <div class="tags">
                             <span class="library-tag">iptables</span>
                             <span class="library-tag">ufw</span>
@@ -872,7 +864,7 @@
                 <li class="task-card cyber-card">
                     <input type="checkbox" class="custom-checkbox" id="blockchain-basics">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/blockchain-technology-an-introduction/" target="_blank" class="link-item">Blockchain Fundamentals</a>
+                        <a href="https://www.geeksforgeeks.org/blockchain-technology-an-introduction/ " target="_blank" class="link-item">Blockchain Fundamentals</a>
                         <div class="tags">
                             <span class="library-tag">hashlib</span>
                             <span class="difficulty-tag">Hard</span>
@@ -886,7 +878,7 @@
                 <li class="task-card ai-card">
                     <input type="checkbox" class="custom-checkbox" id="rnn">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/" target="_blank" class="link-item">Recurrent Neural Networks (RNN)</a>
+                        <a href="https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/ " target="_blank" class="link-item">Recurrent Neural Networks (RNN)</a>
                         <div class="tags">
                             <span class="library-tag">TensorFlow/Keras</span>
                             <span class="difficulty-tag">Hard</span>
@@ -900,7 +892,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="microservices">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/microservice-architecture/" target="_blank" class="link-item">Microservices Architecture</a>
+                        <a href="https://www.geeksforgeeks.org/microservice-architecture/ " target="_blank" class="link-item">Microservices Architecture</a>
                         <div class="tags">
                             <span class="library-tag">FastAPI</span>
                             <span class="library-tag">Docker</span>
@@ -912,7 +904,7 @@
                 <li class="task-card fullstack-card">
                     <input type="checkbox" class="custom-checkbox" id="cicd-github-actions">
                     <div>
-                        <a href="https://docs.github.com/en/actions" target="_blank" class="link-item">CI/CD with GitHub Actions</a>
+                        <a href="https://docs.github.com/en/actions " target="_blank" class="link-item">CI/CD with GitHub Actions</a>
                         <div class="tags">
                             <span class="library-tag">YAML</span>
                             <span class="library-tag">Docker</span>
@@ -927,7 +919,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="kernel-compilation">
                     <div>
-                        <a href="https://www.geeksforgeeks.org/compiling-linux-kernel/" target="_blank" class="link-item">Kernel Compilation</a>
+                        <a href="https://www.geeksforgeeks.org/compiling-linux-kernel/ " target="_blank" class="link-item">Kernel Compilation</a>
                         <div class="tags">
                             <span class="library-tag">make</span>
                             <span class="library-tag">gcc</span>
@@ -939,7 +931,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="systemd-units">
                     <div>
-                        <a href="https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files" target="_blank" class="link-item">Systemd Unit Writing</a>
+                        <a href="https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files " target="_blank" class="link-item">Systemd Unit Writing</a>
                         <div class="tags">
                             <span class="library-tag">systemd</span>
                             <span class="difficulty-tag">Hard</span>
@@ -950,7 +942,7 @@
                 <li class="task-card linux-card">
                     <input type="checkbox" class="custom-checkbox" id="selinux-policy">
                     <div>
-                        <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/using_selinux/writing-a-custom-selinux-policy_using-selinux" target="_blank" class="link-item">SELinux Policy Tuning</a>
+                        <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/using_selinux/writing-a-custom-selinux-policy_using-selinux " target="_blank" class="link-item">SELinux Policy Tuning</a>
                         <div class="tags">
                             <span class="library-tag">semanage</span>
                             <span class="library-tag">audit2allow</span>
@@ -991,5 +983,69 @@
             <p>&copy; 2024 Algorithm Roadmap. Designed by M.J. Abbasi. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize the checkboxes
+            initializeCheckboxes();
+            
+            // Load saved state from localStorage
+            loadCompletedTasks();
+        });
+
+        function initializeCheckboxes() {
+            const checkboxes = document.querySelectorAll('.custom-checkbox');
+            
+            checkboxes.forEach(checkbox => {
+                // Add click event to prevent unchecking
+                checkbox.addEventListener('click', function(e) {
+                    if (this.checked) {
+                        // Only allow checking, not unchecking
+                        markTaskAsCompleted(this);
+                    } else {
+                        // Prevent unchecking
+                        e.preventDefault();
+                    }
+                });
+            });
+        }
+
+        function markTaskAsCompleted(checkbox) {
+            const taskCard = checkbox.closest('.task-card');
+            if (taskCard) {
+                // Add green border class
+                taskCard.classList.add('completed');
+                
+                // Save to localStorage
+                saveCompletedTask(checkbox.id);
+            }
+        }
+
+        function saveCompletedTask(taskId) {
+            let completedTasks = getCompletedTasks();
+            if (!completedTasks.includes(taskId)) {
+                completedTasks.push(taskId);
+                localStorage.setItem('completedTasks', JSON.stringify(completedTasks));
+            }
+        }
+
+        function getCompletedTasks() {
+            return JSON.parse(localStorage.getItem('completedTasks') || '[]');
+        }
+
+        function loadCompletedTasks() {
+            const completedTasks = getCompletedTasks();
+            
+            completedTasks.forEach(taskId => {
+                const checkbox = document.getElementById(taskId);
+                if (checkbox) {
+                    checkbox.checked = true;
+                    const taskCard = checkbox.closest('.task-card');
+                    if (taskCard) {
+                        taskCard.classList.add('completed');
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 </html>
