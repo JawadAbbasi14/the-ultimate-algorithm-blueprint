@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithm Roadmap: Cybersecurity, AI/ML, Full-Stack & Linux CLI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Algorithm Roadmap: Cybersecurity, AI/ML, Full-Stack &amp; Linux CLI</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " rel="stylesheet"/>
+<style>
         /* --- New Modern CSS Styling --- */
         :root {
             /* New Color Palette (Dark Mode) */
@@ -317,673 +318,716 @@
             .container { padding: 0 1rem; }
         }
     </style>
+
+<style>
+    .algorithm-card.selected {
+        border: 2px solid #10b981; /* Beautiful green border */
+    }
+    .algorithm-card.green {
+        background-color: rgba(16, 185, 129, 0.2); /* Green background */
+    }
+    .algorithm-card.yellow {
+        background-color: rgba(251, 191, 36, 0.2); /* Yellow background */
+    }
+    .algorithm-card.red {
+        background-color: rgba(239, 68, 68, 0.2); /* Red background */
+    }
+</style>
+
+<style>
+    /* Glowing green border for selected task cards */
+    .task-card.selected {
+        border: 2px solid rgba(16, 185, 129, 0.7);
+        box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Traffic light background colors */
+    .traffic-green {
+        background-color: rgba(16, 185, 129, 0.15) !important;
+    }
+    
+    .traffic-yellow {
+        background-color: rgba(234, 179, 8, 0.15) !important;
+    }
+    
+    .traffic-red {
+        background-color: rgba(239, 68, 68, 0.15) !important;
+    }
+</style>
 </head>
 <body>
-    <header class="header-bg">
-        <div class="container">
-            <h1>Algorithm Roadmap</h1>
-            <p class="opacity-90 mb-3">Master Cybersecurity, AI/ML, Full-Stack & Linux CLI</p>
-            <p class="opacity-80">Estimated Time: 12-18 months for pro-level mastery (3-4 hours daily)</p>
-        </div>
-    </header>
-    <nav>
-        <div class="container">
-            <a href="#libraries" class="active"><i class="fas fa-toolbox"></i>Libraries & Tools</a>
-            <a href="#phase1"><i class="fas fa-seedling"></i>Phase 1 (Buniyadi)</a>
-            <a href="#phase2"><i class="fas fa-leaf"></i>Phase 2 (Darmiyani)</a>
-            <a href="#phase3"><i class="fas fa-tree"></i>Phase 3 (Uchi)</a>
-            <a href="#phase4"><i class="fas fa-mountain"></i>Phase 4 (Shahana)</a>
-        </div>
-    </nav>
-    <!-- Libraries & Tools Section -->
-    <section id="libraries">
-        <div class="container">
-            <h2 class="section-heading">Libraries & Tools</h2>
-            <p class="text-gray-700" style="color: var(--text-secondary);">Essential libraries for Cybersecurity, AI/ML, Full-Stack, and Linux CLI projects</p>
-            <div class="library-grid" style="margin-top: 2rem;">
-                <div class="library-card">
-                    <h3 class="category-heading ai"><i class="fas fa-robot"></i>AI/ML & Data Science</h3>
-                    <ul>
-                        <li><span class="font-bold">numpy:</span> Numerical operations</li>
-                        <li><span class="font-bold">pandas:</span> Data analysis</li>
-                        <li><span class="font-bold">matplotlib:</span> Data visualization</li>
-                        <li><span class="font-bold">seaborn:</span> Advanced visualization</li>
-                        <li><span class="font-bold">scikit-learn:</span> ML algorithms</li>
-                        <li><span class="font-bold">tensorflow:</span> Deep Learning</li>
-                        <li><span class="font-bold">keras:</span> Neural networks</li>
-                        <li><span class="font-bold">nltk:</span> NLP</li>
-                        <li><span class="font-bold">opencv-python:</span> Computer Vision</li>
-                    </ul>
-                </div>
-                <div class="library-card">
-                    <h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity & Cryptography</h3>
-                    <ul>
-                        <li><span class="font-bold">pycryptodome:</span> Crypto functions</li>
-                        <li><span class="font-bold">bcrypt:</span> Password hashing</li>
-                        <li><span class="font-bold">cryptography:</span> Crypto primitives</li>
-                        <li><span class="font-bold">scapy:</span> Packet manipulation</li>
-                    </ul>
-                </div>
-                <div class="library-card">
-                    <h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack & Web</h3>
-                    <ul>
-                        <li><span class="font-bold">flask:</span> Lightweight web</li>
-                        <li><span class="font-bold">django:</span> Full-featured framework</li>
-                        <li><span class="font-bold">fastapi:</span> Modern APIs</li>
-                        <li><span class="font-bold">networkx:</span> Graph algorithms</li>
-                    </ul>
-                </div>
-                <div class="library-card">
-                    <h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI & System Tools</h3>
-                    <ul>
-                        <li><span class="font-bold">bash:</span> Shell scripting</li>
-                        <li><span class="font-bold">netcat:</span> Network exploration</li>
-                        <li><span class="font-bold">wireshark:</span> Protocol analysis</li>
-                        <li><span class="font-bold">docker:</span> Containerization</li>
-                        <li><span class="font-bold">nmap:</span> Port scanning</li>
-                        <li><span class="font-bold">tmux:</span> Terminal multiplexing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Phase 1 -->
-    <section id="phase1">
-        <div class="container">
-            <h2 class="section-heading">Phase 1: Foundations (Buniyadi Uloom)</h2>
-            <p class="text-gray-700" style="color: var(--text-secondary);">Master basics. Practice 2-3 LeetCode easy problems daily, 1 CLI task weekly. 
+<header class="header-bg">
+<div class="container">
+<h1>Algorithm Roadmap</h1>
+<p class="opacity-90 mb-3">Master Cybersecurity, AI/ML, Full-Stack &amp; Linux CLI</p>
+<p class="opacity-80">Estimated Time: 12-18 months for pro-level mastery (3-4 hours daily)</p>
+</div>
+</header>
+<nav>
+<div class="container">
+<a class="active" href="#libraries"><i class="fas fa-toolbox"></i>Libraries &amp; Tools</a>
+<a href="#phase1"><i class="fas fa-seedling"></i>Phase 1 (Buniyadi)</a>
+<a href="#phase2"><i class="fas fa-leaf"></i>Phase 2 (Darmiyani)</a>
+<a href="#phase3"><i class="fas fa-tree"></i>Phase 3 (Uchi)</a>
+<a href="#phase4"><i class="fas fa-mountain"></i>Phase 4 (Shahana)</a>
+</div>
+</nav>
+<!-- Libraries & Tools Section -->
+<section id="libraries">
+<div class="container">
+<h2 class="section-heading">Libraries &amp; Tools</h2>
+<p class="text-gray-700" style="color: var(--text-secondary);">Essential libraries for Cybersecurity, AI/ML, Full-Stack, and Linux CLI projects</p>
+<div class="library-grid" style="margin-top: 2rem;">
+<div class="library-card">
+<h3 class="category-heading ai"><i class="fas fa-robot"></i>AI/ML &amp; Data Science</h3>
+<ul>
+<li><span class="font-bold">numpy:</span> Numerical operations</li>
+<li><span class="font-bold">pandas:</span> Data analysis</li>
+<li><span class="font-bold">matplotlib:</span> Data visualization</li>
+<li><span class="font-bold">seaborn:</span> Advanced visualization</li>
+<li><span class="font-bold">scikit-learn:</span> ML algorithms</li>
+<li><span class="font-bold">tensorflow:</span> Deep Learning</li>
+<li><span class="font-bold">keras:</span> Neural networks</li>
+<li><span class="font-bold">nltk:</span> NLP</li>
+<li><span class="font-bold">opencv-python:</span> Computer Vision</li>
+</ul>
+</div>
+<div class="library-card">
+<h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity &amp; Cryptography</h3>
+<ul>
+<li><span class="font-bold">pycryptodome:</span> Crypto functions</li>
+<li><span class="font-bold">bcrypt:</span> Password hashing</li>
+<li><span class="font-bold">cryptography:</span> Crypto primitives</li>
+<li><span class="font-bold">scapy:</span> Packet manipulation</li>
+</ul>
+</div>
+<div class="library-card">
+<h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack &amp; Web</h3>
+<ul>
+<li><span class="font-bold">flask:</span> Lightweight web</li>
+<li><span class="font-bold">django:</span> Full-featured framework</li>
+<li><span class="font-bold">fastapi:</span> Modern APIs</li>
+<li><span class="font-bold">networkx:</span> Graph algorithms</li>
+</ul>
+</div>
+<div class="library-card">
+<h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI &amp; System Tools</h3>
+<ul>
+<li><span class="font-bold">bash:</span> Shell scripting</li>
+<li><span class="font-bold">netcat:</span> Network exploration</li>
+<li><span class="font-bold">wireshark:</span> Protocol analysis</li>
+<li><span class="font-bold">docker:</span> Containerization</li>
+<li><span class="font-bold">nmap:</span> Port scanning</li>
+<li><span class="font-bold">tmux:</span> Terminal multiplexing</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Phase 1 -->
+<section id="phase1">
+<div class="container">
+<h2 class="section-heading">Phase 1: Foundations (Buniyadi Uloom)</h2>
+<p class="text-gray-700" style="color: var(--text-secondary);">Master basics. Practice 2-3 LeetCode easy problems daily, 1 CLI task weekly. 
                 <span class="capstone-badge" style="display: block; margin-top: 0.5rem; font-weight: 500; color: var(--accent-secondary);">Capstone: Password manager with encryption</span>
-            </p>
-            <h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="sha256">
-                    <div>
-                        <a href=" https://www.geeksforgeeks.org/sha-256-hash-in-python/ " target="_blank" class="link-item">SHA-256 Hashing</a>
-                        <div class="tags">
-                            <span class="library-tag">pycryptodome</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Data hashing for passwords, file integrity, blockchain.</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="aes">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/implementation-of-aes/ " target="_blank" class="link-item">AES Encryption</a>
-                        <div class="tags">
-                            <span class="library-tag">pycryptodome</span>
-                            <span class="library-tag">cryptography</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Encrypt sensitive data (WhatsApp, VPNs).</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="rsa">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/rsa-algorithm-in-cryptography/ " target="_blank" class="link-item">RSA Algorithm</a>
-                        <div class="tags">
-                            <span class="library-tag">pycryptodome</span>
-                            <span class="library-tag">cryptography</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Key encryption, digital signatures (HTTPS, PGP).</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="base64-encoding">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/encode-ascii-string-base64-format/ " target="_blank" class="link-item">Base64 Encoding/Decoding</a>
-                        <div class="tags">
-                            <span class="library-tag">base64 (Built-in)</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Encode data for secure transmission (email, APIs).</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="password-hashing">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/how-to-use-bcrypt-to-hash-passwords-in-python/ " target="_blank" class="link-item">Password Hashing (bcrypt)</a>
-                        <div class="tags">
-                            <span class="library-tag">bcrypt</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Secure password storage (web apps).</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="linear-regression">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/linear-regression-python-implementation/ " target="_blank" class="link-item">Linear Regression</a>
-                        <div class="tags">
-                            <span class="library-tag">scikit-learn</span>
-                            <span class="library-tag">numpy</span>
-                            <span class="library-tag">pandas</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Predict trends (stock prices, sales).</p>
-                    </div>
-                </li>
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="logistic-regression">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/understanding-logistic-regression/ " target="_blank" class="link-item">Logistic Regression</a>
-                        <div class="tags">
-                            <span class="library-tag">scikit-learn</span>
-                            <span class="library-tag">numpy</span>
-                            <span class="library-tag">pandas</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Binary classification (spam, disease).</p>
-                    </div>
-                </li>
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="knn">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/k-nearest-neighbor-algorithm-in-python/ " target="_blank" class="link-item">K-Nearest Neighbors</a>
-                        <div class="tags">
-                            <span class="library-tag">scikit-learn</span>
-                            <span class="library-tag">numpy</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Classification (recommendation systems).</p>
-                    </div>
-                </li>
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="decision-tree">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/decision-tree-implementation-python/ " target="_blank" class="link-item">Decision Tree</a>
-                        <div class="tags">
-                            <span class="library-tag">scikit-learn</span>
-                            <span class="library-tag">pandas</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Classification and regression (customer segmentation).</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="binary-search">
-                    <div>
-                        <a href="https://leetcode.com/problems/binary-search/ " target="_blank" class="link-item">Binary Search</a>
-                        <div class="tags">
-                            <span class="library-tag">Python Built-in</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Fast searching (databases, autocomplete).</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="merge-sort">
-                    <div>
-                        <a href="https://leetcode.com/problems/sort-list/ " target="_blank" class="link-item">Merge Sort</a>
-                        <div class="tags">
-                            <span class="library-tag">Python Built-in</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Sort large datasets (e-commerce, logs).</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="bubble-sort">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/bubble-sort/ " target="_blank" class="link-item">Bubble Sort</a>
-                        <div class="tags">
-                            <span class="library-tag">Python Built-in</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Basic sorting for small datasets (learning).</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="hash-table">
-                    <div>
-                        <a href="https://leetcode.com/problems/two-sum/ " target="_blank" class="link-item">Hash Table Basics</a>
-                        <div class="tags">
-                            <span class="library-tag">Python Built-in</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Fast lookups (session management).</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="dom-manipulation">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/dom-document-object-model-introduction/ " target="_blank" class="link-item">DOM Manipulation Basics</a>
-                        <div class="tags">
-                            <span class="library-tag">JavaScript</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Interact with web page elements dynamically.</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="rest-client">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/python-requests-tutorial/ " target="_blank" class="link-item">Basic REST Client (fetch/axios)</a>
-                        <div class="tags">
-                            <span class="library-tag">JavaScript</span>
-                            <span class="library-tag">Python (requests)</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Communicate with backend APIs.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="bash-basics">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/bash-scripting-basics/ " target="_blank" class="link-item">Bash Scripting Basics</a>
-                        <div class="tags">
-                            <span class="library-tag">bash</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Automate tasks (backups, log analysis).</p>
-                    </div>
-                </li>
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="file-permissions">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/permissions-in-linux/ " target="_blank" class="link-item">File Permissions & Users</a>
-                        <div class="tags">
-                            <span class="library-tag">bash</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Secure access (chmod, chown).</p>
-                    </div>
-                </li>
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="grep-sed">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/grep-command-in-linux-unix/ " target="_blank" class="link-item">Grep and Sed Basics</a>
-                        <div class="tags">
-                            <span class="library-tag">bash</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Text processing and filtering (logs).</p>
-                    </div>
-                </li>
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="cron-jobs">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/ " target="_blank" class="link-item">Cron Jobs</a>
-                        <div class="tags">
-                            <span class="library-tag">bash</span>
-                            <span class="difficulty-tag">Easy</span>
-                        </div>
-                        <p class="use-case">Automate scheduled tasks (backups).</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Phase 2 -->
-    <section id="phase2">
-        <div class="container">
-            <h2 class="section-heading">Phase 2: Intermediate (Darmiyani Satah)</h2>
-            <p class="text-gray-700" style="color: var(--text-secondary);">Build skills. Solve 3-4 LeetCode medium problems daily, 2 CLI tasks weekly. 
+</p>
+<h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="sha256" type="checkbox"/>
+<div>
+<a class="link-item" href=" https://www.geeksforgeeks.org/sha-256-hash-in-python/ " target="_blank">SHA-256 Hashing</a>
+<div class="tags">
+<span class="library-tag">pycryptodome</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Data hashing for passwords, file integrity, blockchain.</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="aes" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/implementation-of-aes/ " target="_blank">AES Encryption</a>
+<div class="tags">
+<span class="library-tag">pycryptodome</span>
+<span class="library-tag">cryptography</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Encrypt sensitive data (WhatsApp, VPNs).</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="rsa" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/rsa-algorithm-in-cryptography/ " target="_blank">RSA Algorithm</a>
+<div class="tags">
+<span class="library-tag">pycryptodome</span>
+<span class="library-tag">cryptography</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Key encryption, digital signatures (HTTPS, PGP).</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="base64-encoding" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/encode-ascii-string-base64-format/ " target="_blank">Base64 Encoding/Decoding</a>
+<div class="tags">
+<span class="library-tag">base64 (Built-in)</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Encode data for secure transmission (email, APIs).</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="password-hashing" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/how-to-use-bcrypt-to-hash-passwords-in-python/ " target="_blank">Password Hashing (bcrypt)</a>
+<div class="tags">
+<span class="library-tag">bcrypt</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Secure password storage (web apps).</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="linear-regression" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/linear-regression-python-implementation/ " target="_blank">Linear Regression</a>
+<div class="tags">
+<span class="library-tag">scikit-learn</span>
+<span class="library-tag">numpy</span>
+<span class="library-tag">pandas</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Predict trends (stock prices, sales).</p>
+</div>
+</li>
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="logistic-regression" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/understanding-logistic-regression/ " target="_blank">Logistic Regression</a>
+<div class="tags">
+<span class="library-tag">scikit-learn</span>
+<span class="library-tag">numpy</span>
+<span class="library-tag">pandas</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Binary classification (spam, disease).</p>
+</div>
+</li>
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="knn" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/k-nearest-neighbor-algorithm-in-python/ " target="_blank">K-Nearest Neighbors</a>
+<div class="tags">
+<span class="library-tag">scikit-learn</span>
+<span class="library-tag">numpy</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Classification (recommendation systems).</p>
+</div>
+</li>
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="decision-tree" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/decision-tree-implementation-python/ " target="_blank">Decision Tree</a>
+<div class="tags">
+<span class="library-tag">scikit-learn</span>
+<span class="library-tag">pandas</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Classification and regression (customer segmentation).</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="binary-search" type="checkbox"/>
+<div>
+<a class="link-item" href="https://leetcode.com/problems/binary-search/ " target="_blank">Binary Search</a>
+<div class="tags">
+<span class="library-tag">Python Built-in</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Fast searching (databases, autocomplete).</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="merge-sort" type="checkbox"/>
+<div>
+<a class="link-item" href="https://leetcode.com/problems/sort-list/ " target="_blank">Merge Sort</a>
+<div class="tags">
+<span class="library-tag">Python Built-in</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Sort large datasets (e-commerce, logs).</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="bubble-sort" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/bubble-sort/ " target="_blank">Bubble Sort</a>
+<div class="tags">
+<span class="library-tag">Python Built-in</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Basic sorting for small datasets (learning).</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="hash-table" type="checkbox"/>
+<div>
+<a class="link-item" href="https://leetcode.com/problems/two-sum/ " target="_blank">Hash Table Basics</a>
+<div class="tags">
+<span class="library-tag">Python Built-in</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Fast lookups (session management).</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="dom-manipulation" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/dom-document-object-model-introduction/ " target="_blank">DOM Manipulation Basics</a>
+<div class="tags">
+<span class="library-tag">JavaScript</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Interact with web page elements dynamically.</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="rest-client" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/python-requests-tutorial/ " target="_blank">Basic REST Client (fetch/axios)</a>
+<div class="tags">
+<span class="library-tag">JavaScript</span>
+<span class="library-tag">Python (requests)</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Communicate with backend APIs.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="bash-basics" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/bash-scripting-basics/ " target="_blank">Bash Scripting Basics</a>
+<div class="tags">
+<span class="library-tag">bash</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Automate tasks (backups, log analysis).</p>
+</div>
+</li>
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="file-permissions" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/permissions-in-linux/ " target="_blank">File Permissions &amp; Users</a>
+<div class="tags">
+<span class="library-tag">bash</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Secure access (chmod, chown).</p>
+</div>
+</li>
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="grep-sed" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/grep-command-in-linux-unix/ " target="_blank">Grep and Sed Basics</a>
+<div class="tags">
+<span class="library-tag">bash</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Text processing and filtering (logs).</p>
+</div>
+</li>
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="cron-jobs" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/ " target="_blank">Cron Jobs</a>
+<div class="tags">
+<span class="library-tag">bash</span>
+<span class="difficulty-tag">Easy</span>
+</div>
+<p class="use-case">Automate scheduled tasks (backups).</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Phase 2 -->
+<section id="phase2">
+<div class="container">
+<h2 class="section-heading">Phase 2: Intermediate (Darmiyani Satah)</h2>
+<p class="text-gray-700" style="color: var(--text-secondary);">Build skills. Solve 3-4 LeetCode medium problems daily, 2 CLI tasks weekly. 
                 <span class="capstone-badge" style="display: block; margin-top: 0.5rem; font-weight: 500; color: var(--accent-secondary);">Capstone: Flask API with rate limiting</span>
-            </p>
-            <h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="hmac">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/hmac-algorithm-in-python/ " target="_blank" class="link-item">HMAC</a>
-                        <div class="tags">
-                            <span class="library-tag">pycryptodome</span>
-                            <span class="library-tag">cryptography</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Message authenticity (API security).</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="dsa-ecdsa">
-                    <div>
-                        <a href="https://cryptography.io/en/latest/hazmat/primitives/asymmetric/dsa/ " target="_blank" class="link-item">DSA / ECDSA</a>
-                        <div class="tags">
-                            <span class="library-tag">cryptography</span>
-                            <span class="library-tag">pycryptodome</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Digital signatures (blockchain).</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="x509">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/how-to-generate-and-read-x509-certificate-in-python/ " target="_blank" class="link-item">X.509 Certificates</a>
-                        <div class="tags">
-                            <span class="library-tag">cryptography</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Identity verification (HTTPS).</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="diffie-hellman">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/implementation-diffie-hellman-algorithm/ " target="_blank" class="link-item">Diffie-Hellman Key Exchange</a>
-                        <div class="tags">
-                            <span class="library-tag">pycryptodome</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Secure key sharing (VPN, SSH).</p>
-                    </div>
-                </li>
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="packet-crafting">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/packet-crafting-using-scapy/ " target="_blank" class="link-item">Packet Crafting with Scapy</a>
-                        <div class="tags">
-                            <span class="library-tag">scapy</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Network analysis and pentesting.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="svm">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/ " target="_blank" class="link-item">Support Vector Machine (SVM)</a>
-                        <div class="tags">
-                            <span class="library-tag">scikit-learn</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Complex classification (image recognition).</p>
-                    </div>
-                </li>
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="random-forest">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/random-forest-regression-in-python/ " target="_blank" class="link-item">Random Forest</a>
-                        <div class="tags">
-                            <span class="library-tag">scikit-learn</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Ensemble learning for higher accuracy.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="bfs-dfs">
-                    <div>
-                        <a href="https://leetcode.com/tag/breadth-first-search/ " target="_blank" class="link-item">BFS/DFS</a>
-                        <div class="tags">
-                            <span class="library-tag">networkx</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Graph traversal (social networks, pathfinding).</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="rate-limiting">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/rate-limiting-in-flask/ " target="_blank" class="link-item">Rate Limiting</a>
-                        <div class="tags">
-                            <span class="library-tag">Flask-Limiter</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Prevent API abuse (brute-force attacks).</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="jwt-auth">
-                    <div>
-                        <a href="https://pyjwt.readthedocs.io/en/stable/ " target="_blank" class="link-item">JWT Authentication</a>
-                        <div class="tags">
-                            <span class="library-tag">PyJWT</span>
-                            <span class="library-tag">Flask/Django</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Secure API endpoints with stateless tokens.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="process-management">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/linux-process-management/ " target="_blank" class="link-item">Process Management</a>
-                        <div class="tags">
-                            <span class="library-tag">ps</span>
-                            <span class="library-tag">top</span>
-                            <span class="library-tag">kill</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Monitor and control running applications.</p>
-                    </div>
-                </li>
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="networking-tools">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/netcat-nc-command-with-examples/ " target="_blank" class="link-item">Networking Tools</a>
-                        <div class="tags">
-                            <span class="library-tag">netcat</span>
-                            <span class="library-tag">nmap</span>
-                            <span class="library-tag">curl</span>
-                            <span class="difficulty-tag">Medium</span>
-                        </div>
-                        <p class="use-case">Diagnose network issues and security.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Phase 3 -->
-    <section id="phase3">
-        <div class="container">
-            <h2 class="section-heading">Phase 3: Advanced (Uchi Darja)</h2>
-            <p class="text-gray-700" style="color: var(--text-secondary);">Deepen expertise. Solve 1-2 LeetCode hard problems daily, 1 advanced CLI task weekly. 
+</p>
+<h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="hmac" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/hmac-algorithm-in-python/ " target="_blank">HMAC</a>
+<div class="tags">
+<span class="library-tag">pycryptodome</span>
+<span class="library-tag">cryptography</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Message authenticity (API security).</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="dsa-ecdsa" type="checkbox"/>
+<div>
+<a class="link-item" href="https://cryptography.io/en/latest/hazmat/primitives/asymmetric/dsa/ " target="_blank">DSA / ECDSA</a>
+<div class="tags">
+<span class="library-tag">cryptography</span>
+<span class="library-tag">pycryptodome</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Digital signatures (blockchain).</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="x509" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/how-to-generate-and-read-x509-certificate-in-python/ " target="_blank">X.509 Certificates</a>
+<div class="tags">
+<span class="library-tag">cryptography</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Identity verification (HTTPS).</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="diffie-hellman" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/implementation-diffie-hellman-algorithm/ " target="_blank">Diffie-Hellman Key Exchange</a>
+<div class="tags">
+<span class="library-tag">pycryptodome</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Secure key sharing (VPN, SSH).</p>
+</div>
+</li>
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="packet-crafting" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/packet-crafting-using-scapy/ " target="_blank">Packet Crafting with Scapy</a>
+<div class="tags">
+<span class="library-tag">scapy</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Network analysis and pentesting.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="svm" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/support-vector-machine-in-machine-learning/ " target="_blank">Support Vector Machine (SVM)</a>
+<div class="tags">
+<span class="library-tag">scikit-learn</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Complex classification (image recognition).</p>
+</div>
+</li>
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="random-forest" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/random-forest-regression-in-python/ " target="_blank">Random Forest</a>
+<div class="tags">
+<span class="library-tag">scikit-learn</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Ensemble learning for higher accuracy.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="bfs-dfs" type="checkbox"/>
+<div>
+<a class="link-item" href="https://leetcode.com/tag/breadth-first-search/ " target="_blank">BFS/DFS</a>
+<div class="tags">
+<span class="library-tag">networkx</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Graph traversal (social networks, pathfinding).</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="rate-limiting" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/rate-limiting-in-flask/ " target="_blank">Rate Limiting</a>
+<div class="tags">
+<span class="library-tag">Flask-Limiter</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Prevent API abuse (brute-force attacks).</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="jwt-auth" type="checkbox"/>
+<div>
+<a class="link-item" href="https://pyjwt.readthedocs.io/en/stable/ " target="_blank">JWT Authentication</a>
+<div class="tags">
+<span class="library-tag">PyJWT</span>
+<span class="library-tag">Flask/Django</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Secure API endpoints with stateless tokens.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="process-management" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/linux-process-management/ " target="_blank">Process Management</a>
+<div class="tags">
+<span class="library-tag">ps</span>
+<span class="library-tag">top</span>
+<span class="library-tag">kill</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Monitor and control running applications.</p>
+</div>
+</li>
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="networking-tools" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/netcat-nc-command-with-examples/ " target="_blank">Networking Tools</a>
+<div class="tags">
+<span class="library-tag">netcat</span>
+<span class="library-tag">nmap</span>
+<span class="library-tag">curl</span>
+<span class="difficulty-tag">Medium</span>
+</div>
+<p class="use-case">Diagnose network issues and security.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Phase 3 -->
+<section id="phase3">
+<div class="container">
+<h2 class="section-heading">Phase 3: Advanced (Uchi Darja)</h2>
+<p class="text-gray-700" style="color: var(--text-secondary);">Deepen expertise. Solve 1-2 LeetCode hard problems daily, 1 advanced CLI task weekly. 
                 <span class="capstone-badge" style="display: block; margin-top: 0.5rem; font-weight: 500; color: var(--accent-secondary);">Capstone: Neural network for image classification</span>
-            </p>
-            <h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="steganography">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/image-steganography-using-python/ " target="_blank" class="link-item">Steganography</a>
-                        <div class="tags">
-                            <span class="library-tag">Pillow</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Hide data within images or files.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="cnn">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/convolutional-neural-network-in-python/ " target="_blank" class="link-item">Convolutional Neural Networks (CNN)</a>
-                        <div class="tags">
-                            <span class="library-tag">TensorFlow/Keras</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Image classification and recognition.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="dynamic-programming">
-                    <div>
-                        <a href="https://leetcode.com/tag/dynamic-programming/ " target="_blank" class="link-item">Dynamic Programming</a>
-                        <div class="tags">
-                            <span class="library-tag">Python Built-in</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Optimize complex problems (finance, bioinformatics).</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="firewall-config">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/introduction-to-firewall-and-its-types/ " target="_blank" class="link-item">Firewall Configuration</a>
-                        <div class="tags">
-                            <span class="library-tag">iptables</span>
-                            <span class="library-tag">ufw</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Secure server by controlling network traffic.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Phase 4 -->
-    <section id="phase4">
-        <div class="container">
-            <h2 class="section-heading">Phase 4: Mastery (Shahana Maharat)</h2>
-            <p class="text-gray-700" style="color: var(--text-secondary);">Innovate and lead. Contribute to open-source, build complex projects.
+</p>
+<h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="steganography" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/image-steganography-using-python/ " target="_blank">Steganography</a>
+<div class="tags">
+<span class="library-tag">Pillow</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Hide data within images or files.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="cnn" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/convolutional-neural-network-in-python/ " target="_blank">Convolutional Neural Networks (CNN)</a>
+<div class="tags">
+<span class="library-tag">TensorFlow/Keras</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Image classification and recognition.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="dynamic-programming" type="checkbox"/>
+<div>
+<a class="link-item" href="https://leetcode.com/tag/dynamic-programming/ " target="_blank">Dynamic Programming</a>
+<div class="tags">
+<span class="library-tag">Python Built-in</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Optimize complex problems (finance, bioinformatics).</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="firewall-config" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/introduction-to-firewall-and-its-types/ " target="_blank">Firewall Configuration</a>
+<div class="tags">
+<span class="library-tag">iptables</span>
+<span class="library-tag">ufw</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Secure server by controlling network traffic.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Phase 4 -->
+<section id="phase4">
+<div class="container">
+<h2 class="section-heading">Phase 4: Mastery (Shahana Maharat)</h2>
+<p class="text-gray-700" style="color: var(--text-secondary);">Innovate and lead. Contribute to open-source, build complex projects.
                 <span class="capstone-badge" style="display: block; margin-top: 0.5rem; font-weight: 500; color: var(--accent-secondary);">Capstone: Custom Arch Linux build script</span>
-            </p>
-            <h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card cyber-card">
-                    <input type="checkbox" class="custom-checkbox" id="blockchain-basics">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/blockchain-technology-an-introduction/ " target="_blank" class="link-item">Blockchain Fundamentals</a>
-                        <div class="tags">
-                            <span class="library-tag">hashlib</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Build a simple blockchain for understanding.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card ai-card">
-                    <input type="checkbox" class="custom-checkbox" id="rnn">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/ " target="_blank" class="link-item">Recurrent Neural Networks (RNN)</a>
-                        <div class="tags">
-                            <span class="library-tag">TensorFlow/Keras</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Sequence analysis (NLP, time series).</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="microservices">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/microservice-architecture/ " target="_blank" class="link-item">Microservices Architecture</a>
-                        <div class="tags">
-                            <span class="library-tag">FastAPI</span>
-                            <span class="library-tag">Docker</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Build scalable, decoupled systems.</p>
-                    </div>
-                </li>
-                <li class="task-card fullstack-card">
-                    <input type="checkbox" class="custom-checkbox" id="cicd-github-actions">
-                    <div>
-                        <a href="https://docs.github.com/en/actions " target="_blank" class="link-item">CI/CD with GitHub Actions</a>
-                        <div class="tags">
-                            <span class="library-tag">YAML</span>
-                            <span class="library-tag">Docker</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Automate testing and deployment pipelines.</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
-            <ul class="space-y-4" style="list-style: none;">
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="kernel-compilation">
-                    <div>
-                        <a href="https://www.geeksforgeeks.org/compiling-linux-kernel/ " target="_blank" class="link-item">Kernel Compilation</a>
-                        <div class="tags">
-                            <span class="library-tag">make</span>
-                            <span class="library-tag">gcc</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Customize system performance and features.</p>
-                    </div>
-                </li>
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="systemd-units">
-                    <div>
-                        <a href="https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files " target="_blank" class="link-item">Systemd Unit Writing</a>
-                        <div class="tags">
-                            <span class="library-tag">systemd</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Manage system services and daemons reliably.</p>
-                    </div>
-                </li>
-                <li class="task-card linux-card">
-                    <input type="checkbox" class="custom-checkbox" id="selinux-policy">
-                    <div>
-                        <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/using_selinux/writing-a-custom-selinux-policy_using-selinux " target="_blank" class="link-item">SELinux Policy Tuning</a>
-                        <div class="tags">
-                            <span class="library-tag">semanage</span>
-                            <span class="library-tag">audit2allow</span>
-                            <span class="difficulty-tag">Hard</span>
-                        </div>
-                        <p class="use-case">Enforce mandatory access control for enhanced security.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-column">
-                <h3>About This Roadmap</h3>
-                <p>This roadmap is a comprehensive guide for mastering key tech domains. It's structured to build foundational knowledge before tackling advanced topics.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-                <div class="footer-links">
-                    <a href="#phase1" class="footer-link"><i class="fas fa-angle-right"></i>Phase 1</a>
-                    <a href="#phase2" class="footer-link"><i class="fas fa-angle-right"></i>Phase 2</a>
-                    <a href="#phase3" class="footer-link"><i class="fas fa-angle-right"></i>Phase 3</a>
-                    <a href="#phase4" class="footer-link"><i class="fas fa-angle-right"></i>Phase 4</a>
-                </div>
-            </div>
-            <div class="footer-column">
-                <h3>Connect</h3>
-                <div class="footer-links">
-                    <a href="#" class="footer-link"><i class="fab fa-github"></i>GitHub</a>
-                    <a href="#" class="footer-link"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    <a href="#" class="footer-link"><i class="fab fa-twitter"></i>Twitter</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Algorithm Roadmap. Designed by M.J. Abbasi. All Rights Reserved.</p>
-        </div>
-    </footer>
-    <script>
+</p>
+<h3 class="category-heading cyber"><i class="fas fa-shield-alt"></i>Cybersecurity</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card cyber-card">
+<input class="custom-checkbox" id="blockchain-basics" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/blockchain-technology-an-introduction/ " target="_blank">Blockchain Fundamentals</a>
+<div class="tags">
+<span class="library-tag">hashlib</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Build a simple blockchain for understanding.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading ai"><i class="fas fa-robot"></i>AI / Machine Learning</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card ai-card">
+<input class="custom-checkbox" id="rnn" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/ " target="_blank">Recurrent Neural Networks (RNN)</a>
+<div class="tags">
+<span class="library-tag">TensorFlow/Keras</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Sequence analysis (NLP, time series).</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading fullstack"><i class="fas fa-code"></i>Full-Stack</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="microservices" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/microservice-architecture/ " target="_blank">Microservices Architecture</a>
+<div class="tags">
+<span class="library-tag">FastAPI</span>
+<span class="library-tag">Docker</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Build scalable, decoupled systems.</p>
+</div>
+</li>
+<li class="task-card fullstack-card">
+<input class="custom-checkbox" id="cicd-github-actions" type="checkbox"/>
+<div>
+<a class="link-item" href="https://docs.github.com/en/actions " target="_blank">CI/CD with GitHub Actions</a>
+<div class="tags">
+<span class="library-tag">YAML</span>
+<span class="library-tag">Docker</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Automate testing and deployment pipelines.</p>
+</div>
+</li>
+</ul>
+<h3 class="category-heading linux"><i class="fas fa-terminal"></i>Linux CLI</h3>
+<ul class="space-y-4" style="list-style: none;">
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="kernel-compilation" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.geeksforgeeks.org/compiling-linux-kernel/ " target="_blank">Kernel Compilation</a>
+<div class="tags">
+<span class="library-tag">make</span>
+<span class="library-tag">gcc</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Customize system performance and features.</p>
+</div>
+</li>
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="systemd-units" type="checkbox"/>
+<div>
+<a class="link-item" href="https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files " target="_blank">Systemd Unit Writing</a>
+<div class="tags">
+<span class="library-tag">systemd</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Manage system services and daemons reliably.</p>
+</div>
+</li>
+<li class="task-card linux-card">
+<input class="custom-checkbox" id="selinux-policy" type="checkbox"/>
+<div>
+<a class="link-item" href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/using_selinux/writing-a-custom-selinux-policy_using-selinux " target="_blank">SELinux Policy Tuning</a>
+<div class="tags">
+<span class="library-tag">semanage</span>
+<span class="library-tag">audit2allow</span>
+<span class="difficulty-tag">Hard</span>
+</div>
+<p class="use-case">Enforce mandatory access control for enhanced security.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container footer-container">
+<div class="footer-column">
+<h3>About This Roadmap</h3>
+<p>This roadmap is a comprehensive guide for mastering key tech domains. It's structured to build foundational knowledge before tackling advanced topics.</p>
+</div>
+<div class="footer-column">
+<h3>Quick Links</h3>
+<div class="footer-links">
+<a class="footer-link" href="#phase1"><i class="fas fa-angle-right"></i>Phase 1</a>
+<a class="footer-link" href="#phase2"><i class="fas fa-angle-right"></i>Phase 2</a>
+<a class="footer-link" href="#phase3"><i class="fas fa-angle-right"></i>Phase 3</a>
+<a class="footer-link" href="#phase4"><i class="fas fa-angle-right"></i>Phase 4</a>
+</div>
+</div>
+<div class="footer-column">
+<h3>Connect</h3>
+<div class="footer-links">
+<a class="footer-link" href="https://github.com/jawadabbasi14" target="_blank">
+<i class="fab fa-github"></i> GitHub
+        </a>
+<a class="footer-link" href="https://www.linkedin.com/in/jawad-abbasi-60b342307/" target="_blank">
+<i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+<a class="footer-link" href="https://x.com/MJxJawaD" target="_blank">
+<i class="fab fa-twitter"></i> Twitter
+        </a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2024 Algorithm Roadmap. Designed by M.J. Abbasi. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
         document.addEventListener('DOMContentLoaded', () => {
             // Initialize the checkboxes
             initializeCheckboxes();
@@ -1047,5 +1091,193 @@
             });
         }
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const algorithmCards = document.querySelectorAll('.algorithm-card');
+
+        algorithmCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Toggle selection
+                card.classList.toggle('selected');
+
+                // Remove selection from other cards in the same phase
+                const phase = card.closest('.phase');
+                phase.querySelectorAll('.algorithm-card').forEach(otherCard => {
+                    if (otherCard !== card) {
+                        otherCard.classList.remove('selected', 'green', 'yellow', 'red');
+                    }
+                });
+
+                // Apply traffic light mechanism
+                const algorithmsInPhase = phase.querySelectorAll('.algorithm-card');
+                algorithmsInPhase.forEach((alg, index) => {
+                    if (alg === card) {
+                        alg.classList.add('green');
+                    } else if (index < 5) { // Next four algorithms
+                        alg.classList.add('yellow');
+                    } else {
+                        alg.classList.add('red');
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize checkboxes and load saved state
+        initializeCheckboxes();
+        loadCompletedTasks();
+        updateAllTrafficLights();
+
+        // Reset button functionality
+        document.getElementById('resetBtn').addEventListener('click', function() {
+            if (confirm('Are you sure you want to reset all progress? This cannot be undone.')) {
+                resetAllProgress();
+            }
+        });
+    });
+
+    // Initialize checkbox event listeners
+    function initializeCheckboxes() {
+        const checkboxes = document.querySelectorAll('.custom-checkbox');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    markTaskAsCompleted(this);
+                } else {
+                    unmarkTaskAsCompleted(this);
+                }
+
+                // Update traffic lights for this category
+                const categoryList = this.closest('ul');
+                if (categoryList) {
+                    updateTrafficLightForCategory(categoryList);
+                }
+            });
+        });
+    }
+
+    // Mark task as completed
+    function markTaskAsCompleted(checkbox) {
+        const taskCard = checkbox.closest('.task-card');
+        if (taskCard) {
+            taskCard.classList.add('selected');
+            saveCompletedTask(checkbox.id);
+        }
+    }
+
+    // Unmark task as completed
+    function unmarkTaskAsCompleted(checkbox) {
+        const taskCard = checkbox.closest('.task-card');
+        if (taskCard) {
+            taskCard.classList.remove('selected');
+            removeCompletedTask(checkbox.id);
+        }
+    }
+
+    // Save completed task to localStorage
+    function saveCompletedTask(taskId) {
+        let completedTasks = getCompletedTasks();
+        if (!completedTasks.includes(taskId)) {
+            completedTasks.push(taskId);
+            localStorage.setItem('completedTasks', JSON.stringify(completedTasks));
+        }
+    }
+
+    // Remove completed task from localStorage
+    function removeCompletedTask(taskId) {
+        let completedTasks = getCompletedTasks();
+        completedTasks = completedTasks.filter(id => id !== taskId);
+        localStorage.setItem('completedTasks', JSON.stringify(completedTasks));
+    }
+
+    // Get completed tasks from localStorage
+    function getCompletedTasks() {
+        return JSON.parse(localStorage.getItem('completedTasks') || '[]');
+    }
+
+    // Load completed tasks from localStorage
+    function loadCompletedTasks() {
+        const completedTasks = getCompletedTasks();
+
+        completedTasks.forEach(taskId => {
+            const checkbox = document.getElementById(taskId);
+            if (checkbox) {
+                checkbox.checked = true;
+                const taskCard = checkbox.closest('.task-card');
+                if (taskCard) {
+                    taskCard.classList.add('selected');
+                }
+            }
+        });
+    }
+
+    // Update traffic light for a specific category
+    function updateTrafficLightForCategory(categoryList) {
+        const cards = categoryList.querySelectorAll('.task-card');
+        const checkedCards = [];
+
+        // Collect all checked cards in this category
+        cards.forEach(card => {
+            const checkbox = card.querySelector('.custom-checkbox');
+            if (checkbox.checked) {
+                checkedCards.push(card);
+            }
+        });
+
+        // Apply traffic light classes
+        cards.forEach((card, index) => {
+            // Remove existing traffic classes
+            card.classList.remove('traffic-green', 'traffic-yellow', 'traffic-red');
+
+            const checkbox = card.querySelector('.custom-checkbox');
+            if (checkbox.checked) {
+                const cardIndex = checkedCards.indexOf(card);
+                if (cardIndex === 0) {
+                    card.classList.add('traffic-green');
+                } else if (cardIndex >= 1 && cardIndex <= 4) {
+                    card.classList.add('traffic-yellow');
+                } else {
+                    card.classList.add('traffic-red');
+                }
+            } else {
+                card.classList.add('traffic-red');
+            }
+        });
+    }
+
+    // Update all traffic lights on page load
+    function updateAllTrafficLights() {
+        const categoryLists = document.querySelectorAll('.category-heading + ul');
+        categoryLists.forEach(list => {
+            updateTrafficLightForCategory(list);
+        });
+    }
+
+    // Reset all progress
+    function resetAllProgress() {
+        // Uncheck all checkboxes
+        const checkboxes = document.querySelectorAll('.custom-checkbox');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+            const taskCard = checkbox.closest('.task-card');
+            if (taskCard) {
+                taskCard.classList.remove('selected');
+            }
+        });
+
+        // Clear localStorage
+        localStorage.removeItem('completedTasks');
+
+        // Reset traffic lights
+        updateAllTrafficLights();
+
+        alert('All progress has been reset!');
+    }
+</script>
 </body>
 </html>
